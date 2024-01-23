@@ -4,6 +4,7 @@ import {
 import MainLayout from "../layout/MainLayout";
 import HomeLayout from "../layout/HomeLayout";
 import Login from "../component/pages/Login"
+import AllHouses from "../component/pages/AllHouses";
 
 
  const router = createBrowserRouter([
@@ -18,6 +19,11 @@ import Login from "../component/pages/Login"
         {
           path:"/login",
           element:<Login></Login>
+        },
+        {
+          path:"/allhouse",
+          element:<AllHouses></AllHouses>,
+          loader:()=>fetch("../House.json")
         }
    
       ]

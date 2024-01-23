@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../assets/images/logo.png"
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -7,9 +8,9 @@ const NavBar = () => {
         <div className="w-11/12 mx-auto">
           <div className="navbar bg-base-100 flex justify-between">
             <div className="">
-              <a className="">
+              <Link to={"/"} className="">
                 <img className="w-48" src={logo} alt="" srcset="" />
-              </a>
+              </Link>
             </div>
             <div className="flex justify-between w-1/2">
               <div className="form-control w-4/5">
