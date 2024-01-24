@@ -12,6 +12,14 @@ const NavBar = () => {
                 <img className="w-48" src={logo} alt="" srcset="" />
               </Link>
             </div>
+            <div className='gap-4'>
+              <Link className='btn btn-outline' to="/">
+              <button>Home</button>
+              </Link>
+              <Link className='btn btn-outline' to="/allhouse">
+                All-Houses
+              </Link>
+            </div>
             <div className="flex justify-between w-1/2">
               <div className="form-control w-4/5">
                 <input
@@ -40,11 +48,11 @@ const NavBar = () => {
                   <li>
                     <a className="justify-between">
                       Profile
-                      <span className="badge">New</span>
+            
                     </a>
                   </li>
                   <li>
-                    <a>Settings</a>
+                    <a>Dashboard</a>
                   </li>
                   <li>
                     <a>Logout</a>
@@ -54,7 +62,7 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <div className=''>
+        {/* <div className=''>
           <div className="navbar bg-blue-400">
             <div className="navbar-start">
               <div className="dropdown">
@@ -120,7 +128,7 @@ const NavBar = () => {
               
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
 };

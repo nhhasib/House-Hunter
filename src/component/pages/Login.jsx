@@ -13,7 +13,7 @@ const login = () => {
       }}>
         <div className="hero-content w-full">
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body">
+            <form className="card-body pb-4">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -42,9 +42,10 @@ const login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn bg-blue-500 hover:bg-blue-600 text-white text-lg">Login</button>
               </div>
             </form>
+            <p className="text-center py-2">New to this website? <Link className="underline text-blue-700" to="/register">Register here!</Link></p>
           </div>
         </div>
       </div>
