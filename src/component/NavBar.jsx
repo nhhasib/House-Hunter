@@ -28,6 +28,7 @@ const NavBar = () => {
                   className="input input-bordered w-24 md:w-auto"
                 />
               </div>
+              <div><Link to="/login"><button className='btn bg-blue-500 hover:bg-blue-600 text-white'>Login</button></Link></div>
               <div className="dropdown dropdown-end">
                 <div
                   tabIndex={0}

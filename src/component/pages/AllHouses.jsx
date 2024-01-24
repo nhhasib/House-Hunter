@@ -9,7 +9,7 @@ const AllHouses = () => {
   const [housesData,setHousesData]=useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:3000/allhouses')
+    axios.get('https://house-hunter-server-bfw8u70n9-nhhasib.vercel.app/allhouses')
         .then(data => setHousesData(data.data))
     .catch(error=>console.log(error))
 }, [])

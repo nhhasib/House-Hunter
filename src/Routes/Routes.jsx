@@ -6,6 +6,8 @@ import HomeLayout from "../layout/HomeLayout";
 import Login from "../component/pages/Login"
 import AllHouses from "../component/pages/AllHouses";
 import HouseDetails from "../component/pages/HouseDetails";
+import Registation from "../component/pages/Registation";
+import Registration from "../component/pages/Registation";
 
 
  const router = createBrowserRouter([
@@ -22,6 +24,10 @@ import HouseDetails from "../component/pages/HouseDetails";
           element:<Login></Login>
         },
         {
+path:"/registration",
+element:<Registration></Registration>
+        },
+        {
           path:"/allhouse",
           element:<AllHouses></AllHouses>,
           loader:()=>fetch("../House.json")
@@ -29,7 +35,7 @@ import HouseDetails from "../component/pages/HouseDetails";
         {
           path: "/houses/:id",
           element: <HouseDetails></HouseDetails>,
-          loader:({params})=>fetch(`http://localhost:3000/houses/${params.id}`)
+          loader:({params})=>fetch(`https://house-hunter-server-bfw8u70n9-nhhasib.vercel.app/houses/${params.id}`)
         },
    
       ]
