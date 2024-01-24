@@ -35,7 +35,7 @@ element:<Registration></Registration>
         {
           path: "/houses/:id",
           element: <HouseDetails></HouseDetails>,
-          loader:({params})=>fetch(`https://house-hunter-server-bfw8u70n9-nhhasib.vercel.app/houses/${params.id}`)
+          loader:({params})=>fetch(`https://house-hunter-server-3sx7dwkpi-nhhasib.vercel.app/houses/${params.id}`)
         },
    
       ]

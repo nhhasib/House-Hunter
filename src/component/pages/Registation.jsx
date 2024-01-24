@@ -6,7 +6,7 @@ const Registration = () => {
 
 const handleRegister=()=>{
     useEffect(() => {
-        axios.get('https://house-hunter-server-bfw8u70n9-nhhasib.vercel.app/registration')
+        axios.get('https://house-hunter-server-3sx7dwkpi-nhhasib.vercel.app/registration')
             .then(data => setHousesData(data.data))
         .catch(error=>console.log(error))
     }, [])
